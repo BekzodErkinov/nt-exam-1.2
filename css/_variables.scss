@@ -1,0 +1,39 @@
+// .phone
+$phone--border-color: #222;
+$phone--bar-style-radius: 15px;
+
+$phone--bg-color: #f7f7f7;
+$phone--bg-gradient: linear-gradient(25deg, #f7f7f7 76%, #5288f4 50%);
+
+
+// .card-wrapper >
+// h1.card-title
+$card-title--color: #fff;
+$card-title--font-size: 22px;
+
+// card
+$card--bg-gradient: linear-gradient(-41deg, #010101 0%, #313131 46%, #010101 100%);
+
+// h2.card__bank-heading
+$card__bank-heading--color: #fff;
+$card__bank-heading--text: 0 0 6px 2px #191919;
+
+
+// .card-data__card-number
+// .card-data__card-date >
+$card-inputs--font: 'Oxanium', cursive;
+$card-inputs--color: #fff;
+$card-inputs--bg: transparent;
+$card-inputs--border-bottom: 2px solid transparent;
+
+// .card-data__card-number > input.card-number__input
+$card-number--font: 27px;
+// .card-data__card-date > input.card-date
+$card-data--font: 22px;
+
+// .card-data__username
+$card-data__username--font: 'Roboto', sans-serif;
+
+// .card-form__send-btn
+$form-send-btn--color: #fff;
+$form-send-btn--bg-color: #2a66e0;

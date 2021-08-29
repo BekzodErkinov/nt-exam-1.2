@@ -1,0 +1,317 @@
+@import './variables';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.phone {
+  max-width: 520px;
+  min-height: 860px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  padding: 0 20px 20px;
+  border: 20px solid $phone--border-color;
+  border-radius: 70px;
+  overflow: hidden;
+  background: $phone--bg-color;
+  background: $phone--bg-gradient;
+
+  &__bar-style {
+    width: 66%;
+    height: 30px;
+    background: $phone--border-color;
+    border-bottom-left-radius: $phone--bar-style-radius;
+    border-bottom-right-radius: $phone--bar-style-radius;
+  }
+
+  .card-form {
+    width: 100%;
+  }
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .card-title {
+      margin: 19px 0 0;
+      color: $card-title--color;
+      text-transform: uppercase;
+      font-size: $card-title--font-size;
+    }
+
+    .card {
+      max-width: 430px;
+      min-height: 250px;
+      padding: 15px 35px;
+      margin: 25px 0 0;
+      border-radius: 18px;
+      background: $card--bg-gradient;
+
+      &__bank-heading {
+        color: $card__bank-heading--color;
+        margin: 0;
+        text-align: end;
+        text-shadow: $card__bank-heading--text;
+        transition: all 200ms ease;
+      }
+
+      &__chip-icon {
+        width: 54px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 16px 0 0 8px;
+      }
+
+      &__card-data {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .card-inputs {
+          font-family: $card-inputs--font;
+          border: none;
+          outline: none;
+          color: $card-inputs--color;
+          background: $card-inputs--bg;
+          border-bottom: $card-inputs--border-bottom;
+        }
+
+        .card-data__card-number {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+          &:nth-child(1) {
+            position: relative;
+            &::after {
+              content: '1234';
+              position: absolute;
+              top: 84%;
+              left: 3%;
+              color: #888;
+              font-size: 14px;
+            }
+          }
+
+          .card-number__input {
+            width: 70px;
+            font-size: $card-number--font;
+            margin: 10px 7px 0;
+            
+          }
+        }
+        .card-data__card-date {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &::before, &::after {
+            position: absolute;
+            top: 9%;
+            left: -38px;
+            color: #aaa;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-family: $card-inputs--font;
+          }
+          &::before {
+            content: 'Valid';
+          }
+          &::after {
+            content: 'Thur';
+            top: 32%;
+          }
+
+          .card-date {
+            width: 50px;
+            padding: 4px;
+            margin-bottom: 10px;
+            font-size: $card-data--font;
+          }
+          .slash-style {
+            position: relative;
+            color: #fff;
+            font-size: 20px;
+            padding: 0 0 16px;
+            margin: 0 0 0 -15px;
+            &::before {
+              content: 'Month / Year';
+              position: absolute;
+              top: -12px;
+              left: -30px;
+              color: #aaa;
+              font-size: 10px;
+              white-space: nowrap;
+              text-transform: uppercase;
+              font-family: $card-inputs--font;
+            }
+          }
+        }
+        .card__footer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          
+          .card-data__username {
+            width: 210px;
+            font-size: 20px;
+            font-family: $card-data__username--font;
+
+            &::placeholder {
+              color: #aaa;
+            }
+          }
+          .card-brand-icon {
+            opacity: 0;
+            width: 56px;
+            height: 38px;
+            margin-top: -10px;
+            transition: opacity 200ms ease;
+          }
+        }
+      }
+    }
+
+    .card-checkboxes {
+      width: 98%;
+      padding: 15px;
+      margin: 25px 0 0;
+      .list-checkbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        .item-checkbox {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 0;
+          margin: 0 0 15px;
+
+          .item__lead {
+            display: flex;
+            align-items: center;
+
+            .item__icon {
+              width: 30px;
+              height: 30px;
+              margin-right: 20px;
+            }
+            .item__text {
+              .item__title {
+                font-size: 20px;
+                font-weight: 700;
+                margin: 0 0 6px;
+              }
+              .item__subtitle {
+                color: #afb6be;
+                margin: 0;
+              }
+            }
+          }
+          .checkbox {
+            position: relative;
+            margin-right: 22px;
+            
+            .switch {
+              position: absolute;
+              display: inline-block;
+              width: 60px;
+              height: 34px;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
+            .switch input {
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+            .slider {
+              position: absolute;
+              cursor: pointer;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #bdc3c7;
+              border-radius: 34px;
+              transition: .2s cubic-bezier(.55,0,.1,1);
+            }
+            .slider:before {
+              content: '';
+              position: absolute;
+              height: 26px;
+              width: 26px;
+              left: 4px;
+              bottom: 4px;
+              background-color: #fff;
+              border-radius: 50%;
+              transition: .2s cubic-bezier(.55,0,.1,1);
+            }
+            input:checked + .slider {
+              background-color: #5288f4;
+            }
+            input:focus + .slider {
+              box-shadow: 0 0 1px #5288f4;
+            }
+            input:checked + .slider:before {
+              transform: translateX(26px);
+            }
+          }
+        }
+      }
+    }
+
+    .card-from__send-btn {
+      align-self: flex-end;
+      padding: 12px 52px;
+      margin: 15px 47px 10px 0;
+      font-size: 18px;
+      color: $form-send-btn--color;
+      background: $form-send-btn--bg-color;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+    }
+  }
+}

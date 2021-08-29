@@ -1,0 +1,412 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.phone {
+  max-width: 520px;
+  min-height: 860px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px auto;
+  padding: 0 20px 20px;
+  border: 20px solid #222;
+  border-radius: 70px;
+  overflow: hidden;
+  background: #f7f7f7;
+  background: linear-gradient(25deg, #f7f7f7 76%, #5288f4 50%);
+}
+
+.phone__bar-style {
+  width: 66%;
+  height: 30px;
+  background: #222;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.phone .card-form {
+  width: 100%;
+}
+
+.phone .card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .card-wrapper .card-title {
+  margin: 19px 0 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.phone .card-wrapper .card {
+  max-width: 430px;
+  min-height: 250px;
+  padding: 15px 35px;
+  margin: 25px 0 0;
+  border-radius: 18px;
+  background: linear-gradient(-41deg, #010101 0%, #313131 46%, #010101 100%);
+}
+
+.phone .card-wrapper .card__bank-heading {
+  color: #fff;
+  margin: 0;
+  text-align: end;
+  text-shadow: 0 0 6px 2px #191919;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.phone .card-wrapper .card__chip-icon {
+  width: 54px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  margin: 16px 0 0 8px;
+}
+
+.phone .card-wrapper .card__card-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.phone .card-wrapper .card__card-data .card-inputs {
+  font-family: "Oxanium", cursive;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-number:nth-child(1) {
+  position: relative;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-number:nth-child(1)::after {
+  content: '1234';
+  position: absolute;
+  top: 84%;
+  left: 3%;
+  color: #888;
+  font-size: 14px;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-number .card-number__input {
+  width: 70px;
+  font-size: 27px;
+  margin: 10px 7px 0;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-date {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-date::before, .phone .card-wrapper .card__card-data .card-data__card-date::after {
+  position: absolute;
+  top: 9%;
+  left: -38px;
+  color: #aaa;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-family: "Oxanium", cursive;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-date::before {
+  content: 'Valid';
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-date::after {
+  content: 'Thur';
+  top: 32%;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-date .card-date {
+  width: 50px;
+  padding: 4px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-date .slash-style {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  padding: 0 0 16px;
+  margin: 0 0 0 -15px;
+}
+
+.phone .card-wrapper .card__card-data .card-data__card-date .slash-style::before {
+  content: 'Month / Year';
+  position: absolute;
+  top: -12px;
+  left: -30px;
+  color: #aaa;
+  font-size: 10px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: "Oxanium", cursive;
+}
+
+.phone .card-wrapper .card__card-data .card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.phone .card-wrapper .card__card-data .card__footer .card-data__username {
+  width: 210px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.phone .card-wrapper .card__card-data .card__footer .card-data__username::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.phone .card-wrapper .card__card-data .card__footer .card-data__username:-ms-input-placeholder {
+  color: #aaa;
+}
+
+.phone .card-wrapper .card__card-data .card__footer .card-data__username::-ms-input-placeholder {
+  color: #aaa;
+}
+
+.phone .card-wrapper .card__card-data .card__footer .card-data__username::placeholder {
+  color: #aaa;
+}
+
+.phone .card-wrapper .card__card-data .card__footer .card-brand-icon {
+  opacity: 0;
+  width: 56px;
+  height: 38px;
+  margin-top: -10px;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+}
+
+.phone .card-wrapper .card-checkboxes {
+  width: 98%;
+  padding: 15px;
+  margin: 25px 0 0;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+  margin: 0 0 15px;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .item__lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .item__lead .item__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .item__lead .item__text .item__title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .item__lead .item__text .item__subtitle {
+  color: #afb6be;
+  margin: 0;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .checkbox {
+  position: relative;
+  margin-right: 22px;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .checkbox .switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .checkbox .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .checkbox .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #bdc3c7;
+  border-radius: 34px;
+  -webkit-transition: 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .checkbox .slider:before {
+  content: '';
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-transition: 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: 0.2s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .checkbox input:checked + .slider {
+  background-color: #5288f4;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .checkbox input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #5288f4;
+          box-shadow: 0 0 1px #5288f4;
+}
+
+.phone .card-wrapper .card-checkboxes .list-checkbox .item-checkbox .checkbox input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.phone .card-wrapper .card-from__send-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 12px 52px;
+  margin: 15px 47px 10px 0;
+  font-size: 18px;
+  color: #fff;
+  background: #2a66e0;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+/*# sourceMappingURL=styles.css.map */

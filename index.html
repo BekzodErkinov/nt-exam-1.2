@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 2 - Step 8</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="phone">
+      <span class="phone__bar-style"></span>
+      <form class="card-form" action="https://echo.htmlacademy.ru">
+        <div class="card-wrapper">
+          <h1 class="card-title">Card</h1>
+          <div class="card">
+            <h2 class="card__bank-heading">Your Bank</h2>
+            <img class="card__chip-icon" src="./img/card/chip.png" alt="Chip">
+            <div class="card__card-data">
+              <div class="card-data__card-number">
+                <input class="card-inputs card-number__input" type="text" id="card-number" name="card_number" minlength="4" maxlength="4" placeholder="1234" required>
+                <input class="card-inputs card-number__input" type="text" id="bank-number" name="bank_number" minlength="4" maxlength="4" placeholder="5678" required>
+                <input class="card-inputs card-number__input" type="text" id="user-number-1" name="user_number_1" minlength="4" maxlength="4" placeholder="9876" required>
+                <input class="card-inputs card-number__input" type="text" id="user-number-2" name="user_number_2" minlength="4" maxlength="4" placeholder="5432" required>
+              </div>
+              <div class="card-data__card-date">
+                <input class="card-inputs card-date" type="text" id="card-number-month" name="card_number_month" minlength="2" maxlength="2" placeholder="12" required>
+                <span class="slash-style">/</span>
+                <input class="card-inputs card-date" type="text" id="card-number-year" name="card_number_year" minlength="2" maxlength="2" placeholder="99" required>
+              </div>
+              <div class="card__footer">
+                <input class="card-inputs card-data__username" type="text" id="card-username" name="card_username" placeholder="User name" required>
+                <img class="card-brand-icon" src="./img/card/default.png" width="56" height="38" alt="Card Brand">
+              </div>
+            </div>
+          </div>
+          <div class="card-checkboxes">
+            <ul class="list-checkbox">
+              <li class="item-checkbox">
+                <div class="item__lead">
+                  <img class="item__icon" src="./img/lock.svg" alt="">
+                  <div class="item__text">
+                    <h3 class="item__title">Lock Card</h3>
+                    <p class="item__subtitle">You can unlock it later</p>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <label class="switch" for="lock-card-checkbox">
+                    <input class="item__checkbox" type="checkbox" id="lock-card-checkbox" name="lock_card_checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item-checkbox">
+                <div class="item__lead">
+                  <img class="item__icon" src="./img/plane.svg" alt="Plane">
+                  <div class="item__text">
+                    <h3 class="item__title">Payments abroad</h3>
+                    <p class="item__subtitle">Enable your card abroad</p>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <label class="switch" for="payment-card-checkbox">
+                    <input class="item__checkbox" type="checkbox" id="payment-card-checkbox" checked name="payments_abroad_card_checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item-checkbox">
+                <div class="item__lead">
+                  <img class="item__icon" src="./img/laptop.svg" alt="Laptop">
+                  <div class="item__text">
+                    <h3 class="item__title">Online payments</h3>
+                    <p class="item__subtitle">Enable online transactions</p>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <label class="switch" for="online-card-checkbox">
+                    <input class="item__checkbox" type="checkbox" id="online-card-checkbox" name="online_payments_card_checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </li>
+              <li class="item-checkbox">
+                <div class="item__lead">
+                  <img class="item__icon" src="./img/atm.svg" alt="ATM withdrawals">
+                  <div class="item__text">
+                    <h3 class="item__title">ATM withdrawals</h3>
+                    <p class="item__subtitle">Enable ATM withdrawals</p>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <label class="switch" for="atm-card-checkbox">
+                    <input class="item__checkbox" type="checkbox" id="atm-card-checkbox" name="atm_card_checkbox">
+                    <span class="slider"></span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button class="card-from__send-btn" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script defer type="module" src="./js/main.js"></script>
+</body>
+</html>
